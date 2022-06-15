@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-nav:#131921;
+    --color: #cd9042;
+    --color1:#fff;
+}
+body{
+    background-color: #eaeded;
+}
+/* ======Golabel Classes====== */
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .d-flex{
+        display: flex;
+    }
+/* ====X==Golabel Classes==X==== */
+
+/* ======Navigatyion Bar===== */
+    h2{
+        display:none;
+        padding:50px;
+        text-align: center;
+        color:var(--color);
+    }
+    nav{
+        width: 100%;
+        background-color: var(--background-nav);
+        padding:5px 10px;
+        align-items: center;
+        position: sticky;
+        top:0;
+        z-index: 100;
+    }
+    nav .nav_brand a img{
+        width: 100px;
+        margin:20px 18px 0;
+    }
+    nav .search{
+      flex:1;
+    }
+    nav .search input{
+        width: 85%;
+        padding: 10px;
+        border: none;
+    }
+    nav .search .fa-search{
+        padding:10px;
+        background-color:var(--color);
+    }
+            /* Light Mode Dark Mode */
+    .mybody{
+        background-color:black;
+        color:white;
+    }
+    .btn1{
+        border-radius:30px;
+       
+    }
+    .btn1 img{
+        width: 30px;
+        margin-left: -90px;
+    }
+
+    nav .nav_menu{
+        justify-content: space-evenly;
+        align-items: center
+    }
+    nav .nav_menu li{
+        margin:0px 10px;
+    }
+    nav .nav_menu li a{
+        color:var(--color1);
+        font-size: 10px;
+    }
+    nav .nav_menu li a span{
+        font-size: 13px;
+        font-weight: bold;
+    }
+/* ===X===Navigatyion Bar===X== */
+
+/* =======Banner===== */
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner .banner_img{
+         margin-bottom: -153px;
+        -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+    }
+/* ====X===Banner==X=== */
+
+/* ======Product====== */
+    .product{
+        padding: 0px 15px;
+    }
+    
+    .product .product_row .product_body{
+        width: 100%;
+        background-color: var(--color1);
+        padding:20px;
+        margin:10px;
+        z-index: 1;
+    }
+    .product .product_row .product_body .product_description p{
+      font-size:18px;
+      color: #000;
+    }
+    .product .product_row .product_body .product_price p{
+        font-size:18px;
+        margin:5px 0px;
+        color: #000;
+    }
+    .product .product_row .product_body .product_price p span{
+        font-size:20px;
+        font-weight:bold;
+        color: #000;
+    }
+    .product .product_row .rating li{
+        margin-right: 3px;
+        font-size:20px;
+    }
+    .product .product_row .rating li .fa-star{
+        color: var(--color);
+    }
+    .product .product_row .product_body .product_img{
+       justify-content:center;
+    }
+    .product .product_row .product_body .product_img img{
+        height:200px;
+        margin:10px 0px;
+    }
+    .product .product_row .button-cart{
+        justify-content:center;
+        margin:10px 0px;
+    }
+    .product .product_row .button-cart button{
+        padding:5px 10px;
+        cursor: pointer;
+        border: none;
+        font-size:16px;
+        background-color:var(--color);
+    }
+/* ====X==Product==X==== */
+
+/* ======Footer===== */
+footer a {
+    color: #fff;
+  }
+  
+  footer .top {
+    background: #37475a;
+  }
+  
+  footer .top a {
+    padding: 17px;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  footer .top a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .top:hover {
+    background: #485769;
+  }
+  
+  footer .center {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+  
+  footer ul {
+    margin: 30px 40px 30px 0;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+  }
+  
+  footer .middle {
+    background: #232f3e;
+  }
+  
+  footer .middle h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  footer .middle li {
+    position: relative;
+  }
+  
+  footer .middle .logo {
+    background: transparent url('../assets/logo.png') no-repeat 0 0;
+    background-size: 76px;
+    width: 76px;
+    height: 23px;
+    display: block;
+    border: none !important;
+    margin-right: 60px;
+    position: absolute;
+    top: -14px;
+    left: -120px;
+  }
+  
+  footer .middle a {
+    color: #ddd;
+    font-size: 13px;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  footer ul.copy {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  footer ul.copy li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #999;
+    font-size: 11px;
+  }
+  
+  footer .middle .copy {
+    border-top: 1px solid #3a4553;
+    padding: 30px 20px 20px 20px;
+  }
+  
+  footer .middle .copy a {
+    padding: 10px 30px 10px 10px;
+    color: #ccc;
+    border: 1px solid #848688;
+    border-radius: 3px;
+  }
+  
+  footer .middle .copy a:hover {
+    text-decoration: none;
+    border-color: #8D9096;
+  }
+  
+  footer .middle .fa-globe {
+    margin-right: 5px;
+  }
+  
+  footer .middle .flag-icon-us {
+    background-image: url('https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/us.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1em;
+    width: 1.33333333em;
+    margin-right: 7px;
+    background-position: 0 2px;
+  }
+  
+  footer .bottom {
+    background: #131a22;
+  }
+  
+  footer .bottom ul {
+    margin-right: 0;
+  }
+  
+  footer .bottom li {
+    margin-bottom: 15px;
+  }
+  
+  footer .bottom a {
+    color: #ddd;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  
+  footer .bottom a span {
+    color: #999;
+    font-size: 10px;
+  }
+
+/* ====X==Footer==X==== */
+
+/* ====Responsive Ness=== */
+    /* @media(max-width:716px){
+        h2{
+            display:flex;
+        }
+      .banner, .none,.product,.footer{
+            display:none;
+        }
+    } */
+/* ==X==Responsive Ness=X== */
